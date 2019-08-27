@@ -16,9 +16,8 @@ public class IncomeLabel : MonoBehaviour
 
     private IEnumerator SelfDesctruct()
     {
-       yield return new WaitForSecondsRealtime(timeToLive);
-
-       Destroy(gameObject);
+        yield return new WaitForSecondsRealtime(timeToLive);
+        Destroy(gameObject);
     }
 
     void Update()
